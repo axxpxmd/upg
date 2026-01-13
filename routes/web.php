@@ -7,6 +7,7 @@ use App\Http\Controllers\OpdController;
 use App\Http\Controllers\IndikatorController;
 use App\Http\Controllers\PeriodeController;
 use App\Http\Controllers\SubIndikatorController;
+use App\Http\Controllers\PertanyaanController;
 
 // Login Routes
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
@@ -24,4 +25,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('indikator', IndikatorController::class);
     Route::resource('periode', PeriodeController::class);
     Route::resource('sub-indikator', SubIndikatorController::class);
+    Route::resource('pertanyaan', PertanyaanController::class);
 });

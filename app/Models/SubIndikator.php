@@ -24,4 +24,9 @@ class SubIndikator extends Model
     {
         return $this->belongsTo(Indikator::class);
     }
+
+    public function pertanyaans()
+    {
+        return $this->hasMany(Pertanyaan::class);
+    }
 }

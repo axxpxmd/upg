@@ -175,6 +175,12 @@
                         <span>Sub Indikator</span>
                     </a>
 
+                    <!-- Pertanyaan -->
+                    <a href="{{ route('pertanyaan.index') }}" class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-white hover:bg-white/10 rounded-lg transition-all group">
+                        <i data-lucide="help-circle" class="w-5 h-5"></i>
+                        <span>Pertanyaan</span>
+                    </a>
+
                     <!-- Periode -->
                     <a href="{{ route('periode.index') }}" class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-white hover:bg-white/10 rounded-lg transition-all group">
                         <i data-lucide="calendar-range" class="w-5 h-5"></i>
