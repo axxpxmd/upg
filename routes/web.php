@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\OpdController;
+use App\Http\Controllers\IndikatorController;
+use App\Http\Controllers\PeriodeController;
+use App\Http\Controllers\SubIndikatorController;
 
 // Login Routes
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
@@ -18,4 +21,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('pengguna', PenggunaController::class);
     Route::resource('opd', OpdController::class);
+    Route::resource('indikator', IndikatorController::class);
+    Route::resource('periode', PeriodeController::class);
+    Route::resource('sub-indikator', SubIndikatorController::class);
 });

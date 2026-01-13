@@ -51,7 +51,7 @@
                             <img src="{{ asset('images/logo/tangsel.png') }}" alt="Logo Tangsel" class="w-full h-full object-contain">
                         </div>
                         <div>
-                            <p class="text-white font-bold text-base">UPG</p>
+                            <p class="text-white font-box`ld text-base">UPG</p>
                             <p class="text-white/80 text-xs">Unit Pengendali Gratifikasi</p>
                         </div>
                     </div>
@@ -161,6 +161,24 @@
                     <a href="{{ route('opd.index') }}" class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-white hover:bg-white/10 rounded-lg transition-all group">
                         <i data-lucide="building-2" class="w-5 h-5"></i>
                         <span>OPD</span>
+                    </a>
+
+                    <!-- Indikator -->
+                    <a href="{{ route('indikator.index') }}" class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-white hover:bg-white/10 rounded-lg transition-all group">
+                        <i data-lucide="clipboard-list" class="w-5 h-5"></i>
+                        <span>Indikator</span>
+                    </a>
+
+                    <!-- Sub Indikator -->
+                    <a href="{{ route('sub-indikator.index') }}" class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-white hover:bg-white/10 rounded-lg transition-all group">
+                        <i data-lucide="list" class="w-5 h-5"></i>
+                        <span>Sub Indikator</span>
+                    </a>
+
+                    <!-- Periode -->
+                    <a href="{{ route('periode.index') }}" class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-white hover:bg-white/10 rounded-lg transition-all group">
+                        <i data-lucide="calendar-range" class="w-5 h-5"></i>
+                        <span>Periode</span>
                     </a>
 
                     <!-- Pengaturan -->
